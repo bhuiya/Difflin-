@@ -1,0 +1,243 @@
+* {
+
+   box-sizing: border-box;
+
+}
+
+/*
+ https://codepen.io/BuiltBySam/pen/merjWp
+*/
+
+
+#box_animation{
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 300px;
+  background: transparent;
+  font-size: 15px;
+  animation: move 9s;
+  left:-200px;
+}
+@keyframes move
+{
+  0%{
+    left: -300px;
+  }
+  100%{
+    left: 80%;
+    display: none;
+  }
+}
+
+
+
+body {
+    margin: 0;
+    font-family: "Merriweather", serif;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    padding-top: 5px;
+    position: fixed;
+    width:100%;
+
+}
+ul {
+    display: flex;
+    margin-right: 30px;
+   }
+
+
+li {
+   list-style: none;
+    padding: 10px;
+  /*  color: white; https://www.lpco.co/ */
+  color: #4285F4;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+h3{
+  font-family: 'Campton-SemiBold', 'Helvetica Neue', sans-serif;
+	font-weight: normal;
+  opacity: 0.4
+  color:#FFFFFF;
+  letter-spacing: 0.2em;
+  margin: 0.67em 0;;
+}
+
+#h1_1 {
+  width: 250px;
+    margin-left: 20px;
+    margin-right: auto;
+  /*  color: yellow; */
+  color:#EA4335;
+}
+
+#sp1 {
+
+   display: inline-block;
+   font-family: georgia, serif;
+    /*  display: block; */
+	 text-transform: uppercase;
+	 letter-spacing: 0.3em;
+   opacity: 0.4
+   text-decoration-color:#A3B1B5;
+   color:#A3B1B5;
+}
+
+/*
+#sp2 {
+    text-decoration-line: underline;
+    text-decoration-color: yellow;
+   }
+*/
+
+#divimg {
+    background-image: url("front_pic.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 400px;
+    width: 95%;
+    background-position: center;
+
+    }
+
+  #gridpic1{
+    background-image: url("service-industrial.jpg");
+    height: 200px;
+    width:auto;
+  }
+
+  #gridpic2{
+    background-image: url("pic2.jpeg");
+    height: 200px;
+    width:auto;
+  }
+  #gridpic3{
+    background-image: url("pic3.jpg");
+    height: 200px;
+    width:auto;
+  }
+
+
+
+    #flexbox {
+        display: flex;
+        align-content: center;
+        align-self: auto;
+        justify-content: space-around;
+
+    }
+
+    p{
+      color:blue;
+    }
+    .p1{
+        text-align: justify;
+        padding-left: 1px;
+        padding-right: 1px;
+        line-height: 30px;
+         color:green;
+            align-self: auto;
+            letter-spacing: 0.2em;
+            opacity: 0.6
+            padding-bottom:
+    }
+
+    .flexitem {
+        padding: 20px;
+        width: 25%;
+
+    }
+
+
+    .flexabout {
+        padding: 10px;
+        width: 40%;
+
+    }
+
+    .flexlink {
+
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-decoration:none
+        padding-right: 5px;
+        width: 30%;
+        background-color:#2E3192;
+        color:white;
+        line-height: 30px;
+        opacity: 0.6
+        font-family: georgia, serif;
+        font-style: italic;
+        letter-spacing: 0.1em;
+
+    }
+
+    #flexfooter {
+        display: flex;
+        align-content: center;
+        align-self: auto;
+        justify-content: space-around;
+
+    }
+
+
+
+    #div_on_pict {
+        position: fixed;
+        top: 410px;
+        right: 35px;
+        width: 20%;
+        height: 18%;
+        padding: 20px;
+        background-color: rgb(198, 198, 198,0.6);
+        border-radius: 10px;
+           }
+
+           #btn , .btn2{
+
+               background-color: yellow;
+               width: 70%;
+               height: 30px;
+               box-shadow: 20px;
+               border-radius: 15px;
+               font-family: "Oswald";
+               font-weight: 700;
+               }
+
+           .btn2 {
+               background-color: #C6C6C6;;
+           }
+
+ #font_text{
+  font-family: 'Campton-Book', 'Helvetica Neue', sans-serif;
+  color: #2e3192;
+ }
+
+ footer {
+     background-color: black;
+     color: white;
+     padding: 25px;
+ /*    height: 20vh;*/
+ }
+
+ @media screen and (max-width: 700px) {
+     nav {
+         flex-direction: column;
+         align-items: center;
+     }
+     #h1_1 {
+         text-align: center;
+         margin: 0;
+     }
+
+ }
