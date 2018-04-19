@@ -113,19 +113,44 @@ h3{
     background-image: url("service-industrial.jpg");
     height: 200px;
     width:auto;
+    transition: all .5s ease-in-out;
+
+
+
+
   }
+  #gridpic1:hover {
+
+          transform: scale(1.05);
+
+   }
 
 
   #gridpic2{
     background-image: url("pic2.jpeg");
     height: 200px;
     width:auto;
+      transition: all .5s ease-in-out;
   }
+  #gridpic2:hover {
+
+          transform: rotate(10deg);
+         /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+   }
+
+
   #gridpic3{
     background-image: url("pic3.jpg");
     height: 200px;
     width:auto;
+      transition: all .5s ease-in-out;
   }
+  #gridpic3:hover {
+      transform: scale(1.05);
+         /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   }
+
   p{
       color:blue;
     }
@@ -222,6 +247,177 @@ h3{
 
  }
 
+ @media screen and (max-width: 380px) {
+
+   #h1_1 {
+       font-size:10px;
+       margin-left: 20px;
+       margin-right: auto;
+       text-align: justify;
+       /*  color: yellow; */
+       color:#EA4335;
+   }
+
+   nav {
+       display: flex;
+       background-color: white;
+       padding-top: 5px;
+       position: fixed;
+       width:90%;
+       display: block;
+
+   }
+   ul {
+       display: flex;
+       margin-right: 2px;
+
+
+      }
+
+   li {
+      list-style: none;
+       padding: 2px;
+       color: #4285F4;
+       font-size: 10px;
+
+    }
+
+   a{
+     text-decoration: none;
+     color: white;
+    ;
+   }
+
+
+
+     #gridpic1{
+        background-image: url("service-industrial.jpg");
+        width:100%;
+          transition: all .5s ease-in-out;
+      }
+      #gridpic1:hover {
+
+              transform: rotate(10deg);
+
+       }
+
+      #gridpic2{
+        background-image: url("pic2.jpeg");
+        width:100%;
+          transition: all .5s ease-in-out;
+      }
+      #gridpic2:hover {
+
+              transform: rotate(10deg);
+             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+       }
+
+      #gridpic3{
+        background-image: url("pic3.jpg");
+        width: 100%;
+          transition: all .5s ease-in-out;
+      }
+      #gridpic3:hover {
+
+              transform: rotate(10deg);
+
+       }
+
+
+      #flexbox{
+         display: block;
+         align-content: center;
+         align-self: auto;
+         justify-content: space-around;
+      }
+      .flexitem {
+        padding: 20px;
+        width: calc(100% - 20px);
+
+      }
+
+      .p1{
+          text-align: justify;
+          line-height: 20px;
+           color:green;
+           width: 100%;
+           padding-left: -20px;
+           padding-right: -20px;
+           font-size: 13px;
+           align-self: auto;
+           letter-spacing: 0.2em;
+           opacity: 0.6
+
+      }
+
+      .flexlink {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          text-decoration:none
+          padding-right: 5px;
+          width: 90%;
+          background-color:#2E3192;
+          color:white;
+          line-height: 20px;
+          font-size: 12px;
+          opacity: 0.6
+          font-family: georgia, serif;
+          font-style: italic;
+          letter-spacing: 0.1em;
+      }
+
+      .flexabout {
+          padding: 10px;
+          width: 90%;
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 13px;
+        color: white;
+      }
+
+      #box_animation{
+        width: 100px;
+        height: 10px;
+        background-color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 300px;
+        background: transparent;
+
+        animation: move 9s;
+        left:-200px;
+      }
+      @keyframes move
+      {
+        0%{
+          left: -210px;
+        }
+        100%{
+          left: 80%;
+          display: none;
+        }
+      }
+
+      #div_on_pict {
+          position: fixed;
+          top: 410px;
+          right: 100px;
+          padding-top:5px;
+          width: 270px;
+          height: 100px;
+
+          background-color: rgb(198, 198, 198,0.6);
+          border-radius: 10px;
+             }
+
+
+
+ }
+
+
 
 
  @media screen and (max-width: 500px) {
@@ -268,15 +464,36 @@ h3{
      #gridpic1{
         background-image: url("service-industrial.jpg");
         width:100%;
+          transition: all .5s ease-in-out;
       }
+      #gridpic1:hover {
+
+              transform: rotate(10deg);
+
+       }
+
+
       #gridpic2{
         background-image: url("pic2.jpeg");
         width:100%;
+          transition: all .5s ease-in-out;
       }
+      #gridpic2:hover {
+
+              transform: rotate(10deg);
+
+       }
+
       #gridpic3{
         background-image: url("pic3.jpg");
         width: 100%;
+          transition: all .5s ease-in-out;
       }
+      #gridpic3:hover {
+
+              transform: rotate(10deg);
+
+       }
 
       #flexbox{
          display: block;
@@ -376,15 +593,34 @@ h3{
      #gridpic1{
         background-image: url("service-industrial.jpg");
         width:100%;
+         transition: all .5s ease-in-out;
       }
+      #gridpic1:hover {
+
+            transform: rotate(10deg);
+
+     }
+
       #gridpic2{
         background-image: url("pic2.jpeg");
         width:100%;
+         transition: all .5s ease-in-out;
+      }
+      #gridpic2:hover {
+
+             transform: rotate(-10deg);
+
       }
       #gridpic3{
         background-image: url("pic3.jpg");
         width: 100%;
+         transition: all .5s ease-in-out;
       }
+      #gridpic3:hover {
+
+              transform: rotate(10deg);
+
+       }
 
       #flexbox{
          display: block;
@@ -484,14 +720,34 @@ h3{
      #gridpic1{
         background-image: url("service-industrial.jpg");
         width:100%;
+        transition: all .5s ease-in-out;
       }
+      #gridpic1:hover {
+
+            transform: scale(1.05);
+
+      }
+
       #gridpic2{
         background-image: url("pic2.jpeg");
         width:100%;
+        transition: all .5s ease-in-out;
       }
+      #gridpic2:hover {
+
+             transform: rotate(10deg);
+
+      }
+
       #gridpic3{
         background-image: url("pic3.jpg");
         width: 100%;
+        transition: all .5s ease-in-out;
+      }
+      #gridpic3:hover {
+
+               transform: scale(1.05);
+
       }
 
       #flexbox{
@@ -595,14 +851,31 @@ h3{
         background-image: url("service-industrial.jpg");
         width:100%;
       }
+      #gridpic1:hover {
+
+             transform: scale(1.05);
+
+       }
+
       #gridpic2{
         background-image: url("pic2.jpeg");
         width:100%;
       }
+      #gridpic2:hover {
+
+               transform: scale(1.05);
+
+       }
+
       #gridpic3{
         background-image: url("pic3.jpg");
         width: 100%;
       }
+      #gridpic3:hover {
+
+             transform: scale(1.05);
+
+       }
 
       #flexbox{
          display: block;
